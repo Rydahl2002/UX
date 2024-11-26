@@ -7,6 +7,7 @@ $primary: #B1CAB7;
 $secondary: #94725A;
 $info: #EDE0CB;
 
+
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/variables-dark";
@@ -21,12 +22,46 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "bootstrapComponents";
 
 // 5. Du kan lave styling her...
+@import "event";
+@import "map";
+@import "profile";
+@import "calendar";
 
 *{
 	font-family: Inter, sans-serif;
 	margin: 0;
 	max-width: 430px;
 }
+
+
+
+/* Styling til topbaren */
+.topbar {
+	display: flex;
+	justify-content: space-between; /* Placerer elementerne i hver sin ende */
+	align-items: center; /* Centrerer elementerne vertikalt */
+	background-color: #B1CAB7; /* Grøn baggrund */
+	color: #3d3d3d; /* Mørk tekstfarve */
+	padding: 5px 15px; /* Indvendig margen */
+	font-size: 14px; /* Passende tekststørrelse */
+}
+
+.time {
+	font-weight: bold; /* Gør tiden mere fremtrædende */
+}
+
+.icons {
+	display: flex;
+	align-items: center; /* Centrer ikonerne vertikalt */
+	gap: 10px; /* Plads mellem ikonerne */
+}
+
+.icons i {
+	font-size: 18px; /* Ikonstørrelse */
+}
+
+
+
 
 /* Navbar */
 .container-fluid{
@@ -56,10 +91,18 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	color: #94725A; /* Brun farve til ikonet */
 }
 
+
+
+/* INDEX */
 /* Overskrift */
 h1, h2{
 	text-align: center;
 	font-weight: bold;
+}
+
+h5{
+	font-weight: bold;
+
 }
 
 /* Knapper */
@@ -99,187 +142,19 @@ h1, h2{
 
 /* Billeder */
 .carousel-item{
-	width: 211px;
+	width: 100%;
 	height: 300px;
 }
 
 
 
-
-
-
-/* NY BEGIVENHED!! */
-
-.ny{
-	color: #94725A;
-	font-weight: bolder;
-	font-size: 20px;
-	background-color: #EDE0CB;
+.dag{
 	text-align: center;
-	margin: 5%;
-	padding: 20%;
-	border-radius: 50px;
 }
 
-.oplysninger{
-	margin: 20px;
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
-
-.form-control{
-	border: solid 2px #B1CAB7;
-}
-
-/* Kategori knapper */
-
-.kategori{
-	max-width: 430px;
-
-	justify-content: space-around;
-	margin: 20px;
-	align-items: center;
-	align-content: center;
-}
-
-.custom-button {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	padding: 10px 20px; /* Giver plads omkring indholdet */
-	border: 2px solid #B1CAB7; /* Grøn kant */
-	border-radius: 50px; /* Oval form */
-	background-color: white; /* Hvid baggrund */
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Let skygge */
-	color: #333; /* Tekstfarve */
-	font-size: 16px;
-	text-decoration: none;
-	margin: 10px;
-}
-
-.custom-button i {
-	font-size: 20px; /* Ikonets størrelse */
-	color: #94725A; /* Brun farve */
-	margin-right: 10px; /* Plads mellem ikon og tekst */
-}
-
-.btn-info{
-	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-}
-
-
-
-/* Styling til topbaren */
-.topbar {
-	display: flex;
-	justify-content: space-between; /* Placerer elementerne i hver sin ende */
-	align-items: center; /* Centrerer elementerne vertikalt */
-	background-color: #B1CAB7; /* Grøn baggrund */
-	color: #3d3d3d; /* Mørk tekstfarve */
-	padding: 5px 15px; /* Indvendig margen */
-	font-size: 14px; /* Passende tekststørrelse */
-}
-
-.time {
-	font-weight: bold; /* Gør tiden mere fremtrædende */
-}
-
-.icons {
-	display: flex;
-	align-items: center; /* Centrer ikonerne vertikalt */
-	gap: 10px; /* Plads mellem ikonerne */
-}
-
-.icons i {
-	font-size: 18px; /* Ikonstørrelse */
-}
-
-
-
-
-
-
-
-
-
-.card.map-card .living-coral {
-	background-color: #EDE0CB;
-}
-
-.card.map-card .living-coral-text {
-	color: #94725A;
-}
-
-.card.map-card .table th {
-	width: 2rem;
-}
-
-.card.map-card .pt-3-5 {
-	padding-top: 1.25rem;
-}
-
-.card.map-card .card-body {
-	position: absolute;
-	width: 100%;
-	height: 80%;
-	top: 20%;
-	overflow: hidden;
-	background-color: transparent;
-	-webkit-transition: all 1s;
-	-o-transition: all 1s;
-	transition: all 1s;
-}
-
-.card.map-card .card-body.closed {
-	top: 100%;
-	height: 7.5rem;
-	margin-top: -7.5rem;
-}
-
-.card.map-card .map-container {
-	overflow: hidden;
-	padding-bottom: 56.25%;
-	position: relative;
-	height: 0;
-}
-
-.card.map-card .map-container iframe {
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-}
-
-.card.map-card .button .btn-floating {
-	margin-top: -1.5rem;
-}
-
-
-
-
-.dato{
-	color: #94725A;
-	font-weight: bolder;
-	font-size: 20px;
-	background-color: #EDE0CB;
-	margin: 5%;
-	padding: 10%;
-	border-radius: 50px;
-}
-
-.text-container {
-	display: flex;
-	justify-content: space-between; /* Placer tekst og ikon i hver sin ende */
-	align-items: center; /* Centrer elementer vertikalt */
-	border-bottom: 2px solid #94725A; /* Stregen under */
-	padding-bottom: 5px; /* Gør plads til stregen */
-}
-
-
-
-
-
-
-
-
-
-

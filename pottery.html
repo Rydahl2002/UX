@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Going!</title>
+	
+	<meta name="robots" content="All">
+	<meta name="author" content="Udgiver">
+	<meta name="copyright" content="Information om copyright">
+	
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+
+	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<!-- Topbar -->
+<div class="topbar">
+	<!-- Tid -->
+	<span class="time">9:41</span>
+
+	<!-- Ikoner -->
+	<div class="icons">
+		<i class="fa-solid fa-signal"></i> <!-- Signal ikon -->
+		<i class="fa-solid fa-wifi"></i> <!-- WiFi ikon -->
+		<i class="fa-solid fa-battery-full"></i> <!-- Batteri ikon -->
+	</div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar fixed-bottom hstack bg-primary w-100">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="index.html">
+			<i class="fa-solid fa-house link-info fa-lg"></i>
+		</a>
+		<a class="navbar-brand" href="map.html">
+			<i class="fa-solid fa-location-dot link-info fa-lg"></i>
+		</a>
+		<a class="circle" href="event.html">
+			<i class="fa-solid fa-plus"></i>
+		</a>
+		<a class="navbar-brand" href="calendar.html">
+			<i class="fa-solid fa-calendar-days link-info fa-lg"></i>
+		</a>
+		<a class="navbar-brand" href="profile.html">
+			<i class="fa-solid fa-user link-info fa-lg"></i>
+		</a>
+	</div>
+</nav>
+
+<!-- Billede -->
+<img src="download%20(5).jpg" alt="Keramik" style="width: 100%; height: 250px">
+<br><br>
+
+<!-- Overskrift -->
+<h1 class="text-secondary" style="font-weight: bold">DESIGN DIN EGEN KERAMIK!</h1> <br>
+
+<!-- Knapper -->
+<div class="button-container">
+<button type="button" class="btn btn-primary">Going!</button>
+<button type="button" class="btn btn-primary">Maybe</button>
+<button type="button" class="btn btn-primary">Nah</button>
+</div>
+<br>
+
+<!-- Ikon + tekst -->
+<div class="info">
+<div class="d-flex align-items-center flex-row mb-2">
+	<div class="flex-shrink-0">
+		<i class="fa-solid fa-calendar-days link-secondary fa-xl"></i>
+	</div>
+	<div class="flex-grow-1 ms-3">
+		Dato: 07-09-2024
+	</div>
+	<div class="flex-shrink-0">
+		<i class="fa-solid fa-credit-card link-secondary fa-xl"></i>
+	</div>
+	<div class="flex-grow-1 ms-3">
+		399,-
+	</div>
+</div>
+<br>
+<div class="d-flex align-items-center flex-row mb-2">
+	<div class="flex-shrink-0">
+		<i class="fa-solid fa-clock link-secondary fa-xl"></i>
+	</div>
+	<div class="flex-grow-1 ms-3">
+		Tid: 10:00 - 16:00
+	</div>
+</div>
+</div>
+
+<!-- Event beskrivelse -->
+<div class="beskrivelse">
+<h3 style="font-weight: bold">Event beskrivelse:</h3>
+<p>Kom og vær med til en kreativ dag med keramik!
+	<br><br>
+	Det er en perfekt chance for at udfolde din kreativitet, få lov til at lave dit eget design og møde andre keramikinteresserede.
+	Uanset om du ønsker at dekorere en kop, en skål eller en figur, får du mulighed for at sætte dit personlige præg med smukke farver og kreative mønstre. Vi stiller alt materiale til rådighed, og vores dygtige instruktører er klar til at hjælpe dig med at realisere dine idéer.
+	<br><br>
+	Tilmeld dig og vær med til en hyggelig og lærerig oplevelse!</p>
+</div>
+
+
+<!-- Deltagere -->
+<div class="deltagere bg-info p-3">
+	<h1 style="color: white">DELTAGERE:</h1>
+<div class="d-flex flex-row mb-3" style="height: 100px; max-width: 430px">
+	<div class="p-2 text-center">
+		<img src="person%203.jpg" class="rounded-circle img-fluid" alt="Rundt billede" style="width: 86px; height: 86px;">
+		<p>Julia</p>
+	</div>
+	<div class="p-2 text-center">
+		<img src="person%201.jpg" class="rounded-circle img-fluid" alt="Rundt billede" style="width: 86px; height: 86px;">
+		<p>Anna</p>
+	</div>
+	<div class="p-2 text-center">
+		<img src="golaida.jpg" class="rounded-circle img-fluid" alt="Rundt billede" style="width: 86px; height: 86px;">
+		<p>Simone</p>
+	</div>
+	<div class="p-2 text-center">
+		<img src="person%202.jpg" class="rounded-circle img-fluid" alt="Rundt billede" style="width: 86px; height: 86px;">
+		<p>Marianne</p>
+	</div>
+</div>
+</div>
+<br><br>
+
+<!-- Event billeder -->
+<div id="carouselExample" class="carousel slide bg-primary p-2">
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="download%20(2).jpg" class="d-block" alt="...">
+		</div>
+		<div class="carousel-item">
+			<img src="download%20(6).jpg" class="d-block" alt="...">
+		</div>
+		<div class="carousel-item">
+			<img src="download%20(5).jpg" class="d-block" alt="...">
+		</div>
+	</div>
+	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Previous</span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Next</span>
+	</button>
+</div>
+
+<br><br><br><br>
+
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/31fb47af2d.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

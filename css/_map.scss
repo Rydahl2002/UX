@@ -1,0 +1,77 @@
+
+.card.map-card .living-coral {
+  background-color: #EDE0CB;
+}
+
+.card.map-card .living-coral-text {
+  color: #94725A;
+}
+
+.card.map-card .table th {
+  width: 2rem;
+}
+
+.card.map-card .pt-3-5 {
+  padding-top: 1.25rem;
+}
+
+.card.map-card .card-body {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  top: 20%;
+  overflow: hidden;
+  background-color: transparent;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.card.map-card .card-body.closed {
+  top: 100%;
+  height: 7.5rem;
+  margin-top: -7.5rem;
+}
+
+.card.map-card .map-container {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.card.map-card .map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.card.map-card .button .btn-floating {
+  margin-top: -1.5rem;
+}
+
+
+
+
+.dato{
+  color: #94725A;
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: #EDE0CB;
+  margin: 5%;
+  padding: 10%;
+  border-radius: 50px;
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-between; /* Placer tekst og ikon i hver sin ende */
+  align-items: center; /* Centrer elementer vertikalt */
+  border-bottom: 2px solid #94725A; /* Stregen under */
+  padding-bottom: 5px; /* Gør plads til stregen */
+}
+
+
+

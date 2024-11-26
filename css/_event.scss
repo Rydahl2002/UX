@@ -1,0 +1,56 @@
+/* NY BEGIVENHED!! */
+
+.ny{
+  color: #94725A;
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: #EDE0CB;
+  text-align: center;
+  margin: 5%;
+  padding: 20%;
+  border-radius: 50px;
+}
+
+.oplysninger{
+  margin: 20px;
+}
+
+.form-control{
+  border: solid 2px #B1CAB7;
+}
+
+/* Kategori knapper */
+
+.kategori{
+  max-width: 430px;
+
+  justify-content: space-around;
+  margin: 20px;
+  align-items: center;
+  align-content: center;
+}
+
+.custom-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px; /* Giver plads omkring indholdet */
+  border: 2px solid #B1CAB7; /* Grøn kant */
+  border-radius: 50px; /* Oval form */
+  background-color: white; /* Hvid baggrund */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Let skygge */
+  color: #333; /* Tekstfarve */
+  font-size: 16px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.custom-button i {
+  font-size: 20px; /* Ikonets størrelse */
+  color: #94725A; /* Brun farve */
+  margin-right: 10px; /* Plads mellem ikon og tekst */
+}
+
+.btn-info{
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
