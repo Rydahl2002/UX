@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="utf-8">
+
+    <title>Going!</title>
+
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+
+<!-- Topbar -->
+<div class="topbar">
+    <!-- Tid -->
+    <span class="time">9:41</span>
+
+    <!-- Ikoner -->
+    <div class="icons">
+        <i class="fa-solid fa-signal"></i> <!-- Signal ikon -->
+        <i class="fa-solid fa-wifi"></i> <!-- WiFi ikon -->
+        <i class="fa-solid fa-battery-full"></i> <!-- Batteri ikon -->
+    </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar fixed-bottom hstack bg-primary w-100">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <i class="fa-solid fa-house link-info fa-lg"></i>
+        </a>
+        <a class="navbar-brand" href="kort.html">
+            <i class="fa-solid fa-location-dot link-info fa-lg"></i>
+        </a>
+        <a class="circle" href="ny.html">
+            <i class="fa-solid fa-plus"></i>
+        </a>
+        <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-calendar-days link-info fa-lg"></i>
+        </a>
+        <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-user link-info fa-lg"></i>
+        </a>
+    </div>
+</nav>
+<br>
+
+<!-- Tilføj billede -->
+<div class="d-flex align-items-center flex-row mb-2 ny">
+    <div class="flex-shrink-0">
+        <i class="fa-solid fa-plus link-secondary fa-2xl"></i>
+    </div>
+    <div class="flex-grow-1 ms-3">
+        TILFØJ BILLEDE
+    </div>
+</div>
+<br>
+
+<!-- Oplysninger -->
+<section>
+<form class="oplysninger">
+    <input class="form-control form-control-lg" type="text" placeholder="Begivenhedens navn"> <br>
+    <input class="form-control" type="text" placeholder="Dato & tidspunkt"><br>
+    <textarea class="form-control" type="text" placeholder="Event beskrivelse:" rows="5"></textarea><br>
+
+
+<!-- Kategori -->
+<h2 style="color: #94725A">KATEGORI:</h2>
+
+<!-- Kategori knapper -->
+<div class="kategori">
+<a class="custom-button btn btn-outline-primary btn-lg">
+    <i class="fa fa-music"></i> Musik
+</a>
+
+<a class="custom-button btn btn-outline-primary btn-lg">
+    <i class="fa-solid fa-scissors"></i> Strik & hækling
+</a>
+
+<a class="custom-button btn btn-outline-primary btn-lg">
+    <i class="fa fa-camera"></i> Fotografering
+</a>
+
+<a class=" custom-button btn btn-outline-primary btn-lg">
+    <i class="fa fa-paintbrush"></i> Kunst
+</a>
+
+<a class="custom-button btn btn-outline-primary btn-lg">
+    <i class="fa fa-mug-saucer"></i> Keramik
+</a>
+</div>
+<br>
+
+<div class="d-grid col-8 mx-auto">
+    <button class="btn btn-info" type="submit" style="font-size: 22px; font-weight: bold; color: #94725A">OPRET BEGIVENHED</button>
+</div>
+</form>
+</section>
+<br><br><br><br>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/31fb47af2d.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
